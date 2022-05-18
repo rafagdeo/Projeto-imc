@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+}
+.hold {
+	height: 80px;
+  }
+.header {	
+	margin-top: 20px;
+	line-height: 20px;
+	width: 100%;
+	transition: line-height 0.2s linear, box-shadow 0.2s linear;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+  }
+  .header.small {
+	line-height: 50px;
+	box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+  }
+  .nav {
+	  align-items: center;
+  }
+   ul.nav {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  ul.nav li {
+	float: left;
+	position: relative;
+  }
+  
+  ul.nav li a {
+	transition: color 0.2s linear;
+	font-size: 18px;
+  }
+  
+  ul.nav li:hover a {
+	color: #081730;
+  }
+  
+  ul.nav li a {
+	padding: 21px;
+	color: initial;
+	text-decoration: initial;
+  }
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header .container {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+.conteudo{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+.conteudo-principal{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+
+}
+.conteudo-principal-escrito-titulo {
+	font-weight: 400px;
+	font-size: 55px;
+	color: black;
+}
+  
+.conteudo-principal-escrito-paragrafo {
+	font-weight: 400;
+	font-size: 24px;
+	color: black;
+}
+.botao { 
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#081730;
+	border-color: #04324c;
+    clear: both;
+    margin: 20px 0px;
+	border-radius: 20px;
+}
+.botao:hover{
+	color: #081730;
+	background: white;
+}
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	margin-top: 30px;
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-invalido {
+	background-color: lightcoral;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.invisivel {
+	display: none;
+}
